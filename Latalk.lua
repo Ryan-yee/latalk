@@ -20,6 +20,8 @@ local QUOTES = {
     "所以我喜欢在上面，下面太危险",
     "他浑身颤抖，可以理解身体地震",
     "rinima了",
+    "我只想说我的狂战风行也是一绝",
+    "“这奶茶真难喝”“你请我喝奶茶吧”",
 }
 
 local frame = CreateFrame("Frame")
