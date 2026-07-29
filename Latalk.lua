@@ -22,6 +22,8 @@ local QUOTES = {
     "rinima了",
     "我只想说我的狂战风行也是一绝",
     "“这奶茶真难喝”“你请我喝奶茶吧”",
+    "那你顺着网线过来打死我吧",
+    "能让我硬起来的就是女的",
 }
 
 local frame = CreateFrame("Frame")
