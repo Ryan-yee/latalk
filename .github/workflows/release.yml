@@ -23,14 +23,14 @@ jobs:
         shell: bash
         env:
           CURSEFORGE_PROJECT_ID: ${{ vars.CURSEFORGE_PROJECT_ID }}
-          CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
+          CF_API_KEY: ${{ secrets.CF_API_TOKEN }}
         run: |
           if [[ ! "$CURSEFORGE_PROJECT_ID" =~ ^[0-9]+$ ]]; then
             echo "CURSEFORGE_PROJECT_ID must be configured as a numeric repository variable." >&2
             exit 1
           fi
 
-          if [[ -z "$CF_API_TOKEN" ]]; then
+          if [[ -z "$CF_API_KEY" ]]; then
             echo "CF_API_TOKEN must be configured as a repository secret." >&2
             exit 1
           fi
@@ -40,5 +40,5 @@ jobs:
         with:
           args: -p ${{ vars.CURSEFORGE_PROJECT_ID }}
         env:
-          CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
-          GITHUB_API_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          CF_API_KEY: ${{ secrets.CF_API_TOKEN }}
+          GITHUB_OAUTH: ${{ secrets.GITHUB_TOKEN }}
