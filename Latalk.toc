@@ -2,9 +2,8 @@
 ## Title: 拉言拉语
 ## Notes: 进队提示并响应“拉语录”的随机语录插件。
 ## Author: Fangpeng Ye
-## Version: 0.1.0
+## Version: @project-version@
 ## X-License: MIT
 ## IconTexture: Interface\AddOns\Latalk\icon.png
 
 Latalk.lua
-

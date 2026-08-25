@@ -1,0 +1,6 @@
+package-as: Latalk
+
+ignore:
+  - .github
+  - .gitignore
+  - README.md
